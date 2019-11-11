@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "806628831568",
+    "firebase_url": "https://skittles20-fdbf7.firebaseio.com",
+    "project_id": "skittles20-fdbf7",
+    "storage_bucket": "skittles20-fdbf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806628831568:android:52328ea74dbb104c54bc55",
+        "android_client_info": {
+          "package_name": "com.example.skittles20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806628831568-c4q53n2k1rck8tg6m1fi87d4dmgf6fa6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.skittles20",
+            "certificate_hash": "5ff43e4b55844790c894baacaaee9b62f72eba2c"
+          }
+        },
+        {
+          "client_id": "806628831568-nbmmv5chnps8cv5h381vvq3v73p98d6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgWPnV7Ad6KMZuVPCWRDH3hLpijFfgRo4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806628831568-nbmmv5chnps8cv5h381vvq3v73p98d6d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

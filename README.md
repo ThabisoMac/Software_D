@@ -1,2 +1,2 @@
 # Software_D
-image:https://travis-ci.org/ThabisoMac/Software_D.svg?branch=master["Build Status", link="https://travis-ci.org/ThabisoMac/Software_D"]
+[![Build Status](https://travis-ci.org/ThabisoMac/Software_D.svg?branch=master)](https://travis-ci.org/ThabisoMac/Software_D)

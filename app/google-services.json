@@ -1,42 +1,50 @@
 {
   "project_info": {
-    "project_number": "806628831568",
-    "firebase_url": "https://skittles20-fdbf7.firebaseio.com",
-    "project_id": "skittles20-fdbf7",
-    "storage_bucket": "skittles20-fdbf7.appspot.com"
+    "project_number": "1031882333591",
+    "firebase_url": "https://skittles70-5bb4a.firebaseio.com",
+    "project_id": "skittles70-5bb4a",
+    "storage_bucket": "skittles70-5bb4a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:806628831568:android:52328ea74dbb104c54bc55",
+        "mobilesdk_app_id": "1:1031882333591:android:28053abd646f48ff6a38d2",
         "android_client_info": {
-          "package_name": "com.example.skittles20"
+          "package_name": "com.example.skittles70"
         }
       },
       "oauth_client": [
         {
-          "client_id": "806628831568-c4q53n2k1rck8tg6m1fi87d4dmgf6fa6.apps.googleusercontent.com",
+          "client_id": "1031882333591-mnl56ov2v0dk2dp0ql1qag4ttctl8h04.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.skittles20",
-            "certificate_hash": "5ff43e4b55844790c894baacaaee9b62f72eba2c"
+            "package_name": "com.example.skittles70",
+            "certificate_hash": "45ca604b7248351eefa2bad747b1cde47409eb29"
           }
         },
         {
-          "client_id": "806628831568-nbmmv5chnps8cv5h381vvq3v73p98d6d.apps.googleusercontent.com",
+          "client_id": "1031882333591-qekgnb0mlj0cgmvnsfkhjfk3gs32r653.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.skittles70",
+            "certificate_hash": "d41da3c3bd85d35fdc94fcf19ecef2967b9ac26f"
+          }
+        },
+        {
+          "client_id": "1031882333591-ia2vbots1poj5bgkal21s1407oee31tl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAgWPnV7Ad6KMZuVPCWRDH3hLpijFfgRo4"
+          "current_key": "AIzaSyDeaUuTnAhBQh4B5eCFNemKjFUnNw3qECs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "806628831568-nbmmv5chnps8cv5h381vvq3v73p98d6d.apps.googleusercontent.com",
+              "client_id": "1031882333591-ia2vbots1poj5bgkal21s1407oee31tl.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

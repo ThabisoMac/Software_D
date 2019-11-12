@@ -1,4 +1,4 @@
-package com.example.skittles20;
+package com.example.skittles70;
 
 import org.junit.Test;
 

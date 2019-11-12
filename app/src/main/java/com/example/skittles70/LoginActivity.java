@@ -1,7 +1,4 @@
-package com.example.skittles20;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.skittles70;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -13,10 +10,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -24,9 +20,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button buttonSignIn;
-    private EditText editTextEmail;
-    private EditText editTextPassword;
+    private Button buttonLogin;
+    private EditText loginPassword;
+    private EditText loginEmail;
     private TextView textViewSignup;
 
     //firebase auth object
@@ -53,17 +49,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
         }
 
-        editTextEmail = (EditText) findViewById(R.id.editTextEmail);
-        editTextPassword = (EditText) findViewById(R.id.editTextPassword);
-        buttonSignIn = (Button) findViewById(R.id.buttonSignin);
-        textViewSignup = (TextView) findViewById(R.id.textViewSignUp);
+        loginEmail = (EditText) findViewById(R.id.editTextEmail);
+        loginPassword = (EditText) findViewById(R.id.editTextPassword);
+        buttonLogin = (Button) findViewById(R.id.buttonLogin);
+        textViewSignup = (TextView) findViewById(R.id.textViewSignup);
 
-        buttonSignIn.setOnClickListener(this);
+        buttonLogin.setOnClickListener(this);
         textViewSignup.setOnClickListener(this);
     }
     private  void userLogin(){
-        String email = editTextEmail.getText().toString().trim();
-        String password  = editTextPassword.getText().toString().trim();
+        String email = loginEmail.getText().toString().trim();
+        String password  = loginPassword.getText().toString().trim();
 
         //checking if email and passwords are empty
         if(TextUtils.isEmpty(email)){
@@ -79,8 +75,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         //if the email and password are not empty
         //displaying a progress dialog
 
-        progressDialog.setMessage("Registering Please Wait...");
-        progressDialog.show();
+        //progressDialog.setMessage("Registering Please Wait...");
+        //progressDialog.show();
 
         //logging in the user
         firebaseAuth.signInWithEmailAndPassword(email, password)
@@ -88,18 +84,24 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         progressDialog.dismiss();
-                        //if the task is successfull
+                        //if the task is successful
                         if(task.isSuccessful()){
                             //start the profile activity
                             finish();
                             startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+                        }
+                        else
+                        {
+                            Toast.makeText(LoginActivity.this, "Error Logging in!", Toast.LENGTH_LONG);
+                            //finish();
+                            //startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                         }
                     }
                 });
     }
     @Override
     public void onClick(View view) {
-        if(view == buttonSignIn){
+        if(view == buttonLogin){
             userLogin();
         }
 

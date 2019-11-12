@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.skittles20">
+    package="com.example.skittles70">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,6 +13,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ProfileActivity"></activity>
         <activity android:name=".LoginActivity" />
+        <activity android:name=".projectDetails" />
+        <activity android:name=".projectManagement" />
+        <activity android:name=".createProject" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
